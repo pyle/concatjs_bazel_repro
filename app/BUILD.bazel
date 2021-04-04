@@ -3,10 +3,14 @@ load("@npm//@bazel/concatjs:index.bzl", "concatjs_devserver")
 
 ts_project(
     name = "app",
-    srcs = glob(["*.ts"]),
+    srcs = glob(["**/*.ts"]),
 )
 
 concatjs_devserver(
     name = "devserver",
+    serving_path = "/bundle.js",
+    static_files = [
+        "index.html",
+    ],
     deps = [":app"],
 )

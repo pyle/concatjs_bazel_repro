@@ -1,0 +1,1 @@
+`ibazel run //app:devserver`
