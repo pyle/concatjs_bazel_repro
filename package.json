@@ -1,0 +1,17 @@
+{
+  "name": "devserver_test",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@bazel/bazelisk": "latest",
+    "@bazel/buildifier": "latest",
+    "@bazel/concatjs": "^3.2.3",
+    "@bazel/ibazel": "latest",
+    "@bazel/typescript": "^3.2.3",
+    "typescript": "^4.2.3"
+  },
+  "scripts": {
+    "build": "bazel build //...",
+    "test": "bazel test //..."
+  }
+}
